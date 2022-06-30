@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Rater</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+
+function showMessage() {
+  let name = prompt("What is your Name?")
+  alert(`Hello, ${name}!`);
+  alert(`Your name has ${name.length} letters in it!`)
+
+  if (name.length > 6) {
+    alert("That's quite a long name")
+  } else {
+    alert(`That's a pretty short name. ${name}... Kinda short and stupid, no?`)
+  }
+
+  if (name === "Justine") {
+    alert("I must say, that is the most beautiful name I've ever seen")
+  } else {
+    alert("I've heard better names though.")
+  }
+
+}
+  
+
+
+</script>
+
+<body>
+
+  <div class="content">
+
+    <h1 class="title">Free name analyzer</h1>
+
+    <button onclick="showMessage()">Rate My Name!</button> 
+
+  </div>  
+
+  
+
+</body>
+</html>
